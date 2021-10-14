@@ -31,7 +31,7 @@ To explore the concept of bias through data on Wikipedia articles - specifically
 The data files stored in this project were accessed and saved on 10/14/2021.
 
 1. 
-The Wikipedia [politicians by country dataset](https://figshare.com/articles/Untitled_Item/5513449) can be found on Figshare. Read through the documentation for this repository, then download and unzip it to extract the data file, which is called page_data.csv.
+The Wikipedia [politicians by country dataset](https://figshare.com/articles/Untitled_Item/5513449) can be found on Figshare. Read through the documentation for this repository, then download and unzip it to extract the data file, which is called [page_data.csv](https://github.com/savageGrant/data-512-a2/blob/main/raw_data/page_data.csv). This file can be found in the raw_data folder.
 
 |Column        | Description                                        |
 |--------------|----------------------------------------------------|
@@ -42,7 +42,7 @@ The Wikipedia [politicians by country dataset](https://figshare.com/articles/Unt
 
 
 2. 
-The population data is available in CSV format as [WPDS_2020_data.csv](https://docs.google.com/spreadsheets/d/1CFJO2zna2No5KqNm9rPK5PCACoXKzb-nycJFhV689Iw/edit?usp=sharing). This dataset is drawn from the [world population data sheet](https://www.prb.org/international/indicator/population/table/) published by the Population Reference Bureau. 
+The population data is available in CSV format as [WPDS_2020_data.csv](https://docs.google.com/spreadsheets/d/1CFJO2zna2No5KqNm9rPK5PCACoXKzb-nycJFhV689Iw/edit?usp=sharing). This dataset is drawn from the [world population data sheet](https://www.prb.org/international/indicator/population/table/) published by the Population Reference Bureau. This file can be found in the raw_data folder.
 
 |Column        | Description                                                          |
 |--------------|----------------------------------------------------------------------|
@@ -55,12 +55,14 @@ The population data is available in CSV format as [WPDS_2020_data.csv](https://d
 
 3. 
 The predicted quality scores for each article in the Wikipedia dataset is obtained by querying the ORES REST API. ORES is a machine learning system. This was originally an acronym for "Objective Revision Evaluation Service" but was simply renamed “ORES”. ORES is a machine learning tool that can provide estimates of Wikipedia article quality. The article quality estimates are, from best to worst:
-FA - Featured article
-GA - Good article
-B - B-class article
-C - C-class article
-Start - Start-class article
-Stub - Stub-class article
+
+* FA - Featured article
+* GA - Good article
+* B - B-class article
+* C - C-class article
+* Start - Start-class article
+* Stub - Stub-class article
+
 
 These were learned based on articles in Wikipedia that were peer-reviewed using the [Wikipedia content assessment](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment) procedures.These quality classes are a sub-set of quality assessment categories developed by Wikipedia editors. ORES will assign one of these 6 categories to any rev_id you send it.
 
